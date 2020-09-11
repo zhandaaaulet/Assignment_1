@@ -1,9 +1,8 @@
 package com.company.Factory;
 
-import com.company.Cars.AClass;
-import com.company.Cars.Amg;
-import com.company.Cars.LandCruiserPrado;
-import com.company.Cars.SClass;
+import com.company.Cars.MercedesList.AClass;
+import com.company.Cars.MercedesList.Amg;
+import com.company.Cars.MercedesList.SClass;
 import com.company.Mercedes;
 
 public class MercedesFactory {

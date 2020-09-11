@@ -1,8 +1,9 @@
 package com.company.Factory;
 
 import com.company.Cars.*;
+import com.company.Cars.KiaList.Cerato;
+import com.company.Cars.KiaList.Rio;
 import com.company.Kia;
-import com.company.Mercedes;
 
 public class KiaFactory {
     public static Kia getModel(String model) {

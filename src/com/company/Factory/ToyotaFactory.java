@@ -1,8 +1,8 @@
 package com.company.Factory;
 
-import com.company.Cars.Camry;
-import com.company.Cars.Corolla;
-import com.company.Cars.LandCruiserPrado;
+import com.company.Cars.ToyotaList.Camry;
+import com.company.Cars.ToyotaList.Corolla;
+import com.company.Cars.ToyotaList.LandCruiserPrado;
 import com.company.Toyota;
 
 public class ToyotaFactory {
