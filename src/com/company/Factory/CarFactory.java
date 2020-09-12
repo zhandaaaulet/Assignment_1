@@ -1,4 +1,10 @@
-package com.company;
+package com.company.Factory;
+
+import com.company.Builder.Car;
+
+import com.company.Cars.KiaList.Kia;
+import com.company.Cars.MercedesList.Mercedes;
+import com.company.Cars.ToyotaList.Toyota;
 
 public class CarFactory {
 

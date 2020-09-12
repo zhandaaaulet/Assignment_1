@@ -3,7 +3,7 @@ package com.company.Factory;
 import com.company.Cars.ToyotaList.Camry;
 import com.company.Cars.ToyotaList.Corolla;
 import com.company.Cars.ToyotaList.LandCruiserPrado;
-import com.company.Toyota;
+import com.company.Cars.ToyotaList.Toyota;
 
 public class ToyotaFactory {
     public static Toyota getModel(String model) {

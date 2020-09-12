@@ -3,7 +3,7 @@ package com.company.Factory;
 import com.company.Cars.MercedesList.AClass;
 import com.company.Cars.MercedesList.Amg;
 import com.company.Cars.MercedesList.SClass;
-import com.company.Mercedes;
+import com.company.Cars.MercedesList.Mercedes;
 
 public class MercedesFactory {
     public static Mercedes getModel(String model) {

@@ -1,11 +1,10 @@
-package com.company;
+package com.company.Builder;
 
 public class Car {
     private String carName;
-    private String carBrand;
     private String carModel;
     private int price;
-    private int yearOfManufacture;
+    private String city;
 
 
    /* public Car() {
@@ -23,10 +22,9 @@ public class Car {
 
     public Car(CarBuilder item) {
         this.carName = item.carName;
-        this.carBrand = item.carBrand;
         this.carModel = item.carModel;
         this.price = item.price;
-        this.yearOfManufacture = item.yearOfManufacture;
+        this.city = item.city;
     }
 
 
@@ -39,13 +37,7 @@ public class Car {
         this.carName = carName;
     }
 
-    public String getCarBrand() {
-        return carBrand;
-    }
 
-    public void setCarBrand(String carBrand) {
-        this.carBrand = carBrand;
-    }
 
     public String getCarModel() {
         return carModel;
@@ -63,26 +55,18 @@ public class Car {
         this.price = price;
     }
 
-    public int getYearOfManufacture() {
-        return yearOfManufacture;
-    }
 
-    public void setYearOfManufacture(int yearOfManufacture) {
-        this.yearOfManufacture = yearOfManufacture;
-    }
 
     public static class CarBuilder{
         private String carName;
-        private String carBrand;
         private String carModel;
         private int price;
-        private int yearOfManufacture;
+        private String city;
 
 
 
-        public CarBuilder(String carName, String carBrand, String carModel) {
+        public CarBuilder(String carName, String carModel) {
             this.carName = carName;
-            this.carBrand = carBrand;
             this.carModel = carModel;
         }
 
@@ -91,8 +75,8 @@ public class Car {
             return this;
         }
 
-        public CarBuilder withYearOfManufacture(int yearOfManufacture) {
-            this.yearOfManufacture = yearOfManufacture;
+        public CarBuilder withYearOfManufacture(String city) {
+            this.city = city;
             return this;
         }
 
@@ -105,6 +89,6 @@ public class Car {
 
     @Override
     public String toString() {
-        return carName + " " + carBrand + " " + carModel + " " + price + " " + yearOfManufacture;
+        return "Car name: " + carName + ". "  + "Car model: " + carModel + ". " +"Car price: " + price + ". " + "Car city: " + city + ".";
     }
 }
